@@ -101,3 +101,7 @@ body {
 .nav-link:hover {
   color: #d8b4fe;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgb(147, 51, 234, 0.5);
+}
