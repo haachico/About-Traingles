@@ -8,7 +8,7 @@ function areaOfTriangle(a, b) {
 
 function calcAreaOfTriangle() {
   const area = areaOfTriangle(Number(sides[0].value), Number(sides[1].value));
-  output.innerText = `The area of triangle is ${area}`;
+  output.innerText = `The area of triangle is ${area}.`;
 }
 
 checkButton.addEventListener("click", calcAreaOfTriangle);

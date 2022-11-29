@@ -61,3 +61,42 @@ body {
 .nav-link:hover {
   color: #d8b4fe;
 }
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 3.5rem;
+  padding: 1rem 3rem;
+}
+
+.side-a,
+.side-b {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.side-input {
+  margin-bottom: 2.5rem;
+  padding: 1rem 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.check-btn {
+  padding: 0.8rem 1.3rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  background-color: #9333ea;
+  color: white;
+  border: none;
+}
+
+.output {
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: black;
+}

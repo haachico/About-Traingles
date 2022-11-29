@@ -15,7 +15,7 @@ function calcHypotenuse() {
   //   console.log(sumOfSquaresOfSides);
 
   const lengthOfHypotenuse = Math.sqrt(sumOfSquaresOfSides);
-  outputE1.innerText = `The hypotenuse is ${lengthOfHypotenuse}`;
+  outputE1.innerText = `The hypotenuse is ${lengthOfHypotenuse}.`;
 }
 
 hypButton.addEventListener("click", calcHypotenuse);
