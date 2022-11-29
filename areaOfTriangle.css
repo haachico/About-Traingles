@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #f3e8ff;
+}
+
 .container {
   width: 100%;
   margin: auto;
@@ -16,4 +20,44 @@ html {
   align-items: center;
   text-align: center;
   padding: 4rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #9333ea;
+  height: 10rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.page-heading {
+  padding: 0 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.navigation {
+  padding: 0 5px;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:active,
+.nav-link:hover {
+  color: #d8b4fe;
 }
