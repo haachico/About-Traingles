@@ -7,15 +7,19 @@ function calcSumOfSquares(a, b) {
   return sumOfSquares;
 }
 function calcHypotenuse() {
-  const sumOfSquaresOfSides = calcSumOfSquares(
-    Number(sides[0].value),
-    Number(sides[1].value)
-  );
+  let sideOne = Number(sides[0].value);
+  let sideTwo = Number(sides[1].value);
 
-  //   console.log(sumOfSquaresOfSides);
+  if (sideOne < 0 || sideTwo < 0 || sideOne === 0 || sideTwo === 0) {
+    outputE1.innerText = `Enter a positive angle.`;
+  } else {
+    const sumOfSquaresOfSides = calcSumOfSquares(sideOne, sideTwo);
 
-  const lengthOfHypotenuse = Math.sqrt(sumOfSquaresOfSides);
-  outputE1.innerText = `The hypotenuse is ${lengthOfHypotenuse}.`;
+    //   console.log(sumOfSquaresOfSides);
+
+    const lengthOfHypotenuse = Math.sqrt(sumOfSquaresOfSides).toFixed(2);
+    outputE1.innerText = `The hypotenuse is ${lengthOfHypotenuse}.`;
+  }
 }
 
 hypButton.addEventListener("click", calcHypotenuse);
