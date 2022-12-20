@@ -7,8 +7,20 @@ function areaOfTriangle(a, b) {
 }
 
 function calcAreaOfTriangle() {
-  const area = areaOfTriangle(Number(sides[0].value), Number(sides[1].value));
-  output.innerText = `The area of triangle is ${area}.`;
+  const inputHeight = Number(sides[0].value);
+  const inputBase = Number(sides[1].value);
+
+  if (
+    inputHeight === 0 ||
+    inputHeight < 0 ||
+    inputBase === 0 ||
+    inputBase < 0
+  ) {
+    output.innerText = `Please enter a valid value.`;
+  } else {
+    const area = areaOfTriangle(inputHeight, inputBase).toFixed(2);
+    output.innerText = `The area of triangle is ${area}.`;
+  }
 }
 
 checkButton.addEventListener("click", calcAreaOfTriangle);
